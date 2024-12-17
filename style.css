@@ -1,0 +1,161 @@
+/* styles.css */
+body {
+  font-family: 'Poppins', sans-serif;
+  line-height: 1.6;
+  margin: 0;
+  padding: 0;
+  background: linear-gradient(45deg, #080101, #fad0c4, #fbc2eb);
+  background-size: 300% 300%;
+  animation: gradientBG 15s ease infinite;
+  color: #333;
+}
+
+/* Animation for background gradient */
+@keyframes gradientBG {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+/* Header styling */
+header {
+  background-color: rgba(0, 0, 0, 0.8);
+  color: white;
+  padding: 1.5em 0;
+  text-align: center;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+header h1 {
+  font-size: 2.5rem;
+  margin: 0;
+}
+
+header p {
+  font-size: 1.2rem;
+  margin: 5px 0;
+}
+
+header nav {
+  margin-top: 10px;
+}
+
+header nav a {
+  margin: 0 15px;
+  color: #ffd700;
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s;
+}
+
+header nav a:hover {
+  color: #ff4500;
+}
+
+/* Section styling */
+section {
+  padding: 30px;
+  margin: 20px auto;
+  max-width: 800px;
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s;
+}
+
+section:hover {
+  transform: scale(1.02);
+}
+
+section h2 {
+  font-size: 1.8rem;
+  color: #444;
+  border-bottom: 2px solid #ff7f50;
+  padding-bottom: 10px;
+  margin-bottom: 15px;
+}
+
+section p, section ul {
+  font-size: 1rem;
+  margin: 15px 0;
+  color: #555;
+}
+
+ul {
+  list-style: square inside;
+}
+
+ul li {
+  margin-bottom: 10px;
+}
+
+/* Project cards */
+.project {
+  background: linear-gradient(135deg, #f5af19, #f12711);
+  padding: 15px;
+  border-radius: 8px;
+  color: white;
+  margin-bottom: 15px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+.project h3 {
+  margin-top: 0;
+}
+
+.project p {
+  margin: 5px 0;
+}
+
+/* Footer styling */
+footer {
+  text-align: center;
+  padding: 15px;
+  background: rgba(0, 0, 0, 0.9);
+  color: #fff;
+  font-size: 0.9rem;
+  position: sticky;
+  bottom: 0;
+}
+
+/* Button animations */
+a, button {
+  text-decoration: none;
+  background: linear-gradient(90deg, #756e66, #8a6963);
+  color: white;
+  padding: 10px 15px;
+  border-radius: 5px;
+  display: inline-block;
+  margin-top: 10px;
+  transition: transform 0.3s, background 0.3s;
+}
+
+a:hover, button:hover {
+  transform: translateY(-3px);
+  background: linear-gradient(90deg, #322e2d, #6b6664);
+}
+
+/* Contact form styling */
+#contact p a {
+  color: #ff4500;
+  text-decoration: underline;
+}
+
+#contact p a:hover {
+  color: #ff6347;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  header h1 {
+    font-size: 2rem;
+  }
+
+  section {
+    padding: 20px;
+    margin: 10px auto;
+  }
+}

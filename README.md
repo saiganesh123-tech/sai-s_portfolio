@@ -1,0 +1,1 @@
+This is my personal portfolio website developed to highlight my skills, projects, and achievements. The website is responsive, modern, and user-friendly, built with HTML, CSS, JavaScript, and Flask for backend functionality.
